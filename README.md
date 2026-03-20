@@ -1,21 +1,21 @@
 # Book My Stay App
 
 ## Overview
-This project demonstrates adding optional services to existing reservations without affecting room allocation or inventory.
+This project demonstrates booking history tracking and reporting for confirmed reservations.
 
-Use Case 7 allows guests to select add-on services and calculates additional costs.
+Use Case 8 stores reservations in a list to maintain order and generates a report for administrative review.
 
 ## Concepts Used
-- Map<String, List<Service>> for reservation-to-services mapping
-- Composition over inheritance
-- Separation of core booking and optional services
-- Cost aggregation
+- List<Reservation> for chronological booking history
+- Unmodifiable lists for safe retrieval
+- Reporting service separated from data storage
+- Operational visibility and audit trail
 
 ## How to Compile and Run
-javac UseCase7AddOnServiceSelection.java
-java UseCase7AddOnServiceSelection
+javac UseCase8BookingHistoryReport.java
+java UseCase8BookingHistoryReport
 
 ## Output
-- Shows services added to each reservation
-- Displays total additional cost
-- Keeps core booking and inventory unchanged
+- Stores confirmed reservations in order
+- Displays all bookings
+- Shows total bookings in report
