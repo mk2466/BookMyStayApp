@@ -112,9 +112,9 @@ public class UseCase9ErrorHandlingValidation {
 
         Reservation r1 = new Reservation("Alice", "Single Room", "R-101");
         Reservation r2 = new Reservation("Bob", "Double Room", "R-102");
-        Reservation r3 = new Reservation("Charlie", "Presidential Suite", "R-103"); // Invalid type
+        Reservation r3 = new Reservation("Charlie", "Presidential Suite", "R-103"); 
         Reservation r4 = new Reservation("David", "Suite Room", "R-104");
-        Reservation r5 = new Reservation("Eve", "Suite Room", "R-105"); // Should fail if no rooms left
+        Reservation r5 = new Reservation("Eve", "Suite Room", "R-105");
 
         bookingService.allocateRoom(r1);
         bookingService.allocateRoom(r2);
