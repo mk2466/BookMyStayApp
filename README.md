@@ -1,15 +1,19 @@
 # Book My Stay App
 
 ## Overview
-This project is a basic Hotel Booking Management System developed using Core Java. 
-Use Case 1 demonstrates how a Java application starts and displays a welcome message.
+This project demonstrates object-oriented concepts in a Hotel Booking System using Core Java.
 
-## Objective
-- Create a Java program with a main() method
-- Display application name and version
-- Ensure smooth execution
+Use Case 2 introduces room types using abstraction and inheritance, and displays their availability.
+
+## Concepts Used
+- Abstract Class
+- Inheritance
+- Polymorphism
+- Encapsulation
 
 ## How to Compile and Run
-javac UseCase1HotelBookingApp.java
-java UseCase1HotelBookingApp
+javac UseCase2RoomInitialization.java
+java UseCase2RoomInitialization
 
+## Output
+Displays different room types along with their details and availability.
