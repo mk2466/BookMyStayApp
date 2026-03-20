@@ -1,18 +1,19 @@
 # Book My Stay App
 
 ## Overview
-This project demonstrates centralized room inventory management using Core Java.
+This project demonstrates room search functionality using centralized inventory.
 
-Use Case 3 replaces separate availability variables with a HashMap to manage room availability in a single place.
+Use Case 4 allows users to view available rooms without modifying system data.
 
 ## Concepts Used
-- HashMap
-- Encapsulation
-- Centralized state management
+- Read-only access
+- Separation of concerns
+- Validation logic
 
 ## How to Compile and Run
-javac UseCase3InventorySetup.java
-java UseCase3InventorySetup
+javac UseCase4RoomSearch.java
+java UseCase4RoomSearch
 
 ## Output
-Displays room availability and updates inventory using a centralized system.
+Displays only available rooms with their details and pricing.
+
