@@ -1,20 +1,23 @@
 # Book My Stay App
 
 ## Overview
-This project demonstrates handling of booking requests in a hotel system using a queue.
+This project demonstrates booking confirmation and room allocation with inventory consistency.
 
-Use Case 5 collects guest booking requests in a first-come-first-served (FIFO) manner without modifying inventory.
+Use Case 6 processes queued booking requests, assigns unique room IDs, and updates inventory immediately to prevent double-booking.
 
 ## Concepts Used
-- Queue (FIFO)
-- Request ordering
-- Decoupling request intake from allocation
+- Set (for unique room IDs)
+- HashMap (for room type allocations)
+- Inventory synchronization
+- FIFO queue processing
 
 ## How to Compile and Run
-javac UseCase5BookingRequestQueue.java
-java UseCase5BookingRequestQueue
+javac UseCase6RoomAllocationService.java
+java UseCase6RoomAllocationService
 
 ## Output
-- Shows booking requests being added to the queue
-- Preserves arrival order
-- Prepares requests for later allocation
+- Confirms reservations
+- Assigns unique room IDs
+- Updates inventory in real-time
+- Prevents double-booking
+
