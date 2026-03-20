@@ -1,21 +1,22 @@
 # Book My Stay App
 
 ## Overview
-This project demonstrates booking history tracking and reporting for confirmed reservations.
+This project demonstrates structured error handling and validation for hotel bookings.
 
-Use Case 8 stores reservations in a list to maintain order and generates a report for administrative review.
+Use Case 9 ensures invalid room types or unavailable rooms are detected and handled gracefully using custom exceptions.
 
 ## Concepts Used
-- List<Reservation> for chronological booking history
-- Unmodifiable lists for safe retrieval
-- Reporting service separated from data storage
-- Operational visibility and audit trail
+- Input validation
+- Custom exceptions (InvalidBookingException)
+- Fail-fast design
+- Safe inventory updates
 
 ## How to Compile and Run
-javac UseCase8BookingHistoryReport.java
-java UseCase8BookingHistoryReport
+javac UseCase9ErrorHandlingValidation.java
+java UseCase9ErrorHandlingValidation
 
 ## Output
-- Stores confirmed reservations in order
-- Displays all bookings
-- Shows total bookings in report
+- Detects invalid room types
+- Prevents overbooking
+- Displays clear error messages
+- Keeps system stable after errors
