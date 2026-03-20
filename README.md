@@ -1,23 +1,21 @@
 # Book My Stay App
 
 ## Overview
-This project demonstrates booking confirmation and room allocation with inventory consistency.
+This project demonstrates adding optional services to existing reservations without affecting room allocation or inventory.
 
-Use Case 6 processes queued booking requests, assigns unique room IDs, and updates inventory immediately to prevent double-booking.
+Use Case 7 allows guests to select add-on services and calculates additional costs.
 
 ## Concepts Used
-- Set (for unique room IDs)
-- HashMap (for room type allocations)
-- Inventory synchronization
-- FIFO queue processing
+- Map<String, List<Service>> for reservation-to-services mapping
+- Composition over inheritance
+- Separation of core booking and optional services
+- Cost aggregation
 
 ## How to Compile and Run
-javac UseCase6RoomAllocationService.java
-java UseCase6RoomAllocationService
+javac UseCase7AddOnServiceSelection.java
+java UseCase7AddOnServiceSelection
 
 ## Output
-- Confirms reservations
-- Assigns unique room IDs
-- Updates inventory in real-time
-- Prevents double-booking
-
+- Shows services added to each reservation
+- Displays total additional cost
+- Keeps core booking and inventory unchanged
