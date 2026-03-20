@@ -1,19 +1,20 @@
 # Book My Stay App
 
 ## Overview
-This project demonstrates room search functionality using centralized inventory.
+This project demonstrates handling of booking requests in a hotel system using a queue.
 
-Use Case 4 allows users to view available rooms without modifying system data.
+Use Case 5 collects guest booking requests in a first-come-first-served (FIFO) manner without modifying inventory.
 
 ## Concepts Used
-- Read-only access
-- Separation of concerns
-- Validation logic
+- Queue (FIFO)
+- Request ordering
+- Decoupling request intake from allocation
 
 ## How to Compile and Run
-javac UseCase4RoomSearch.java
-java UseCase4RoomSearch
+javac UseCase5BookingRequestQueue.java
+java UseCase5BookingRequestQueue
 
 ## Output
-Displays only available rooms with their details and pricing.
-
+- Shows booking requests being added to the queue
+- Preserves arrival order
+- Prepares requests for later allocation
