@@ -1,24 +1,31 @@
-# Book My Stay App – Use Case 10
+# Book My Stay App – Use Case 11
 
-## Booking Cancellation & Inventory Rollback
+## Concurrent Booking Simulation (Thread Safety)
 
 ### Overview
 
-This project demonstrates a Hotel Booking Management System using Core Java. It focuses on implementing booking cancellation with proper inventory rollback using a stack-based approach.
+This module demonstrates how multiple booking requests are processed concurrently using threads while ensuring thread safety and consistent system state.
 
 ### Features
 
-* Create booking
-* Cancel confirmed booking
-* Prevent duplicate cancellation
-* Prevent cancellation of non-existent booking
-* Restore inventory after cancellation
-* Maintain consistent system state
+* Simulates concurrent booking requests
+* Uses shared booking queue
+* Thread-safe inventory updates
+* Prevents double allocation
+* Maintains consistent state under multi-threading
+
+### Concepts Covered
+
+* Race Conditions
+* Thread Safety
+* Synchronization
+* Shared Mutable State
+* Critical Sections
 
 ### Data Structures Used
 
 * HashMap
 * Stack
-
+* Queue (LinkedList)
 
 
