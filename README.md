@@ -1,31 +1,35 @@
-# Book My Stay App – Use Case 11
+# Book My Stay App – Use Case 12
 
-## Concurrent Booking Simulation (Thread Safety)
+## Data Persistence & System Recovery
 
 ### Overview
 
-This module demonstrates how multiple booking requests are processed concurrently using threads while ensuring thread safety and consistent system state.
+This module demonstrates how application state is persisted to a file and restored after restart, ensuring continuity and preventing data loss.
+
 
 ### Features
 
-* Simulates concurrent booking requests
-* Uses shared booking queue
-* Thread-safe inventory updates
-* Prevents double allocation
-* Maintains consistent state under multi-threading
+* Save booking and inventory state to file
+* Restore system state on restart
+* Prevent data loss across executions
+* Handle missing or corrupted files safely
+* Maintain consistent system recovery
+
 
 ### Concepts Covered
 
-* Race Conditions
-* Thread Safety
-* Synchronization
-* Shared Mutable State
-* Critical Sections
+* Persistence
+* Serialization
+* Deserialization
+* Stateful Applications
+* Failure Tolerance
+
 
 ### Data Structures Used
 
 * HashMap
 * Stack
-* Queue (LinkedList)
+* File Handling
+* Object Streams
 
 
